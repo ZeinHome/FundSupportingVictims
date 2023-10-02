@@ -1,0 +1,265 @@
+:root {
+  --container-width: 1230px;
+  --container-padding: 15px;
+
+  --font-main: 'Montserrat', sans-serif;
+
+  --text-back: #000;
+  --text-white: #fff;
+  --text-second: #73a6b1;
+
+  --bg-primary: #fff;
+
+  --bg-btn: #7ae5fd;
+  --bg-white: #fff;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type='submit'] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* utils */
+
+body {
+  font-family: var(--font-main), sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-back);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+/* header */
+
+.header__rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 0;
+}
+
+.nav {
+  display: flex;
+
+  gap: 24px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  gap: 56px;
+}
+
+.nav-list__item > .nav-list__link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: var(--text-back);
+}
+
+.nav__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 21px 35px;
+
+  border-radius: 87px;
+  background: var(--bg-btn);
+}
+
+/* hero */
+
+.hero {
+  padding: 202px 0;
+  background: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-wrapper {
+  display: grid;
+
+  gap: 20px;
+
+  max-width: 686.313px;
+
+  margin-left: 105px;
+}
+
+.hero__title {
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 94.9%;
+  text-transform: uppercase;
+
+  color: var(--text-white);
+}
+
+.hero__text {
+  max-width: 440px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero__btn {
+  display: flex;
+  padding: 21px 35px;
+  justify-content: center;
+  align-items: center;
+
+  width: 283px;
+
+  border-radius: 87px;
+  background: var(--bg-white);
+}
+
+/* warVictimsFund */
+
+.warVictimsFund {
+  display: grid;
+
+  gap: 15px;
+  padding: 160px 0;
+
+  text-align: center;
+}
+
+.warVictimsFund__title--primary {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.warVictimsFund__title--second {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+}
+
+.warVictimsFund__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: var(--text-second);
+}
